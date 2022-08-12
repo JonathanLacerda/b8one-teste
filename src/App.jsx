@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { apiProducts } from '../services/apiProducts';
-import CardContainer from '../components/cardContainer/cardContainer';
+import CardContent from '../components/cardContainer/cardContainer';
 import { GlobalStyle } from './styles';
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
     return (
         <div className="App">
             <GlobalStyle />
-            <CardContainer data={products} />
+            <CardContent data={products} />
         </div>
     )
 }
