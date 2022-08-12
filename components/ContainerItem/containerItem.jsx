@@ -1,4 +1,4 @@
-import Card from "../card/card"
+import Card from './../Card/card';
 import { CardContainer } from "./styles"
 
 function ContainerItem(itens) {
