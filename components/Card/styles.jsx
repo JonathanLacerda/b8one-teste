@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Title = styled.h2`
     a {
-        display: inline-block;
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
@@ -10,6 +9,11 @@ export const Title = styled.h2`
         margin-top: 25px;
         text-decoration: none;
         color: #1C1C1C;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 `
 
