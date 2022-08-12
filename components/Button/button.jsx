@@ -1,4 +1,4 @@
-import { useState, useRef} from "react";
+import { useState, useRef, useEffect } from "react";
 import { BuyButton, Svg, Path } from './styles.jsx'
 import { ToastContainer, toast } from 'react-toastify'
 import { createGlobalState  } from 'react-hooks-global-state';
@@ -9,24 +9,31 @@ const { useGlobalState } = createGlobalState({inCart:[]});
 function Button(product) {
     const ref = useRef(null);
     const [isActive, setIsActive] = useState(false);
-    const [productsInCart, setProductsInCart] = useGlobalState('inCart');
+    const [ productsInCart, setProductsInCart ] = useState([]);
+    const [ dataProducts, setdataProducts ] = useGlobalState('inCart');
 
     const AddToCart = (event) => {
         setIsActive(current => !current);
-        setProductsInCart(oldArray => [...oldArray, ref.current.id]);
 
         if(!isActive) {
             toast.success(`
                 ${ref.current.name} foi adicionado ao carrinho!
             `);
+            setdataProducts(oldArray => [...oldArray, ref.current.id]);
         }
 
         if(isActive) {
             toast.success(`
                 ${ref.current.name} foi removido do carrinho!
             `);
+            setdataProducts(prev => prev.filter(item => item !== ref.current.id ))
         }
     }
+
+    useEffect(() => {
+        setProductsInCart([...new Set(dataProducts)])
+        console.log(productsInCart)
+    },[dataProducts])
 
     return <>
         <ToastContainer />

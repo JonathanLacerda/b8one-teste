@@ -7,7 +7,7 @@ function ContainerItem(itens) {
         {
             itens?.data?.map((item) => {
                 return <Card 
-                    
+                    key={item.attribute.id}
                     data={item} 
                 />
             })

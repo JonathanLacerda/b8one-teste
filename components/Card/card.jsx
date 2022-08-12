@@ -4,7 +4,6 @@ import Wishlist from '../Wishlist/wishlist';
 
 function Card(item) {
     const product = item.data
-    const URL = './imgs/';
 
     return <>
         <Item className="card_container" data-sku={product.attribute.sku}>
@@ -13,7 +12,7 @@ function Card(item) {
                 name={product.attribute.name}
             />
             <a href={product.attribute.url}>
-                <img src={ URL + product.attribute.imageName } />
+                <img src={ product.attribute.imageName } />
             </a>
             <Title>
                 <a href={product.attribute.url}>

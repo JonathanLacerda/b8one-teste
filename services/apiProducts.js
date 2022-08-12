@@ -4,7 +4,7 @@ export const apiProducts = async () => {
         attribute: {
             sku: 'b8one-18201',
             name: `Monitor LED 27'' Gamer Meio Curvo Samsung  1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50`,
-            imageName: 'image.png',
+            imageName: 'https://i.ibb.co/RHTxzQ2/image.png',
             id: 15654,
             url: '#'
         },
@@ -21,7 +21,7 @@ export const apiProducts = async () => {
         attribute: {
             sku: 'b8one-18201',
             name: `Monitor LED 27'' Gamer Semi Curvo Samsung  1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50`,
-            imageName: 'image.png',
+            imageName: 'https://i.ibb.co/RHTxzQ2/image.png',
             id: 15655,
             url: '#'
         },
@@ -38,7 +38,7 @@ export const apiProducts = async () => {
         attribute: {
             sku: 'b8one-18201',
             name: `Monitor LED 27'' Gamer Bem Curvo Samsung  1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50`,
-            imageName: 'image.png',
+            imageName: 'https://i.ibb.co/RHTxzQ2/image.png',
             id: 15656,
             url: '#'
         },
@@ -55,7 +55,7 @@ export const apiProducts = async () => {
         attribute: {
             sku: 'b8one-18201',
             name: `Monitor LED 27'' Gamer Pouco Curvo Samsung  1920 x 1080 FHD 240 Hz HDMI, DP, Gsync Série CRG50`,
-            imageName: 'image.png',
+            imageName: 'https://i.ibb.co/RHTxzQ2/image.png',
             id: 15657,
             url: '#'
         },
