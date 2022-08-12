@@ -23,6 +23,9 @@ export const BuyButton = styled.button`
     }
 
     &.checked {
+        background-color: #A3F9B9;
+        color: #1C1C1C;
+
         svg {
             display: block;
         }
@@ -35,9 +38,9 @@ export const Svg = styled.svg`
     border-radius: 50%;
     display: block;
     stroke-width: 2;
-    stroke: #fff;
+    stroke: #1C1C1C;
     stroke-miterlimit: 10;
-    box-shadow: inset 0px 0px 0px #40B25C;
+    box-shadow: inset 0px 0px 0px #1C1C1C;
     position: absolute;
     left: 15px;
     top: 0px;
