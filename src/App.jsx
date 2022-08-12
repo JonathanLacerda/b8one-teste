@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { apiProducts } from '../services/apiProducts';
-import ContainerItem from '../components/cardContainer/cardContainer';
+import ContainerItem from '../components/ContainerItem/containerItem';
 import { GlobalStyle } from './styles';
 
 function App() {
